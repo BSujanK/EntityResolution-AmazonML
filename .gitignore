@@ -1,0 +1,27 @@
+# Challenge dataset (not redistributable) and generated artefacts
+data/
+dataset/
+work/
+output/
+*_submission.zip
+*.parquet
+*.tsv
+*.safetensors
+*.bin
+model_*/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,22 @@
+# Tool configuration only; this repository is a set of scripts, not an installable package.
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = [
+    # polars deprecations raised by the (frozen) pipeline code, not by the tests
+    "ignore:.*empty_as_null.*:DeprecationWarning",
+    "ignore:the default behavior of `how='horizontal'`.*:DeprecationWarning",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+extend-exclude = ["work", "output", "data"]
+
+[tool.ruff.lint]
+# Correctness checks only: the submitted pipeline code is kept exactly as it was run.
+select = ["F", "E9"]
+
+[tool.ruff.lint.per-file-ignores]
+# Unused imports left in the pipeline scripts exactly as they were run
+"src/*.py" = ["F401"]

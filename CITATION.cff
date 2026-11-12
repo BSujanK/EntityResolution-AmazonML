@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Business Entity Resolution at 12-Million-Record Scale (Amazon ML Challenge 2026)"
+type: software
+authors:
+  - given-names: "B Sujan"
+    family-names: "Kumar"
+    affiliation: "BMS College of Engineering, Bengaluru"
+  - given-names: "Apeksha Sanjay"
+    family-names: "Hudali"
+    affiliation: "BMS College of Engineering, Bengaluru"
+repository-code: "https://github.com/BSujanK/EntityResolution-AmazonML"
+license: MIT
+date-released: "2026-09-27"
+keywords:
+  - entity resolution
+  - record linkage
+  - blocking
+  - LightGBM
+  - cross-encoder
+  - transliteration
+abstract: >-
+  A CPU-only cascade for multi-source business entity resolution: script-aware normalisation,
+  hashed multi-key blocking, a cross-fitted LightGBM pair model, fine-tuned MiniLM cross-encoders on
+  uncertain pairs, an entity-group twin veto, EM label-shift calibration and per-entity expected-F0.5
+  set selection. Public leaderboard macro F0.5 0.980385; held-out 0.98637.

@@ -1,0 +1,13 @@
+# Runtime dependencies needed by the unit tests (no torch / transformers: the tests never touch the cross-encoder).
+# Pins match requirements.txt.
+polars==1.44.2
+numpy==2.2.6
+scipy==1.17.1
+scikit-learn==1.8.0
+lightgbm==4.7.0
+rapidfuzz==3.14.6
+anyascii==0.3.3
+
+# Test and lint tooling
+pytest==9.1.1
+ruff==0.17.4
